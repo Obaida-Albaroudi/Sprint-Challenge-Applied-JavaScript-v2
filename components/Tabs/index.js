@@ -31,21 +31,26 @@ function tab(tabName){
 
     tab.textContent = tabName;
 
+    tab.addEventListener("click", e=>{
+        console.log(e.target)
+        tab.classList.toggle("active-tab")
+    })
+
     return tab
 }
 
 //Stretch
-function selectTab() {
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach((tabElement) => {
-      tabElement.classList.remove("active-tab")
-    });
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      card.style.display = "none";
-    })
-    this.tabElement.classList.add("active-tab");
-    this.cards.forEach(card => card.selectCard());
-  }
+// function selectTab() {
+//     const tabs = document.querySelectorAll('.tab');
+//     tabs.forEach((tabElement) => {
+//       tabElement.classList.remove("active-tab")
+//     });
+//     const cards = document.querySelectorAll(".card");
+//     cards.forEach((card) => {
+//       card.style.display = "none";
+//     })
+//     tab.classList.add("active-tab");
+//     cards.forEach(card => card.selectCard());
+//   }
 
-  tab.addEventListener("click", () => selectTab());
+//   tab.addEventListener("click", () => selectTab());
