@@ -19,7 +19,6 @@ const list = [{
 const headerContainer = document.querySelector(".header-container")
 
 list.forEach(element => {
-    console.log(element)
     headerContainer.appendChild(Header(element.date, element.h1, element.temp))
 });
 
@@ -29,10 +28,6 @@ function Header(date, h1, temp) {
     const title = document.createElement("h1");
     const tempp = document.createElement("span");
 
-    header.appendChild(dates);
-    header.appendChild(title);
-    header.appendChild(tempp);
-    
     header.classList.add("header");
     dates.classList.add("date");
     tempp.classList.add("temp");
@@ -40,6 +35,10 @@ function Header(date, h1, temp) {
     dates.textContent = date;
     title.textContent = h1;
     temp.textContent = temp;
+
+    header.appendChild(dates);
+    header.appendChild(title);
+    header.appendChild(tempp);
 
     return header
     
