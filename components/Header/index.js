@@ -19,6 +19,7 @@ const list = [{
 const headerContainer = document.querySelector(".header-container")
 
 list.forEach(element => {
+
     headerContainer.appendChild(Header(element.date, element.h1, element.temp))
 });
 
@@ -34,7 +35,7 @@ function Header(date, h1, temp) {
 
     dates.textContent = date;
     title.textContent = h1;
-    temp.textContent = temp;
+    tempp.textContent = temp;
 
     header.appendChild(dates);
     header.appendChild(title);

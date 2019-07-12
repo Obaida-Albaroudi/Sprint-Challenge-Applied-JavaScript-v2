@@ -29,7 +29,23 @@ function tab(tabName){
 
     tab.classList.add("tab");
 
-    tab.textContent = tabName
+    tab.textContent = tabName;
 
     return tab
 }
+
+//Stretch
+function selectTab() {
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach((tabElement) => {
+      tabElement.classList.remove("active-tab")
+    });
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.style.display = "none";
+    })
+    this.tabElement.classList.add("active-tab");
+    this.cards.forEach(card => card.selectCard());
+  }
+
+  tab.addEventListener("click", () => selectTab());
