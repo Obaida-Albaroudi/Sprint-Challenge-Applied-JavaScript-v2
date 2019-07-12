@@ -29,14 +29,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    - It is built like a data structure (tree). Essentially the hierarchy of the webpage (Grandparent, parent, child, grandchild, etc.)
 
 2. What is an event?
+    -  The way users interact with the webpage (click, buttons, etc.)
 
 3. What is an event listener?
+    - We put it on an element and it is what allows us to put a callback and have the element react to the event that happens.
 
 4. Why would we convert a NodeList into an Array?
+     - So we can get access to all the array methods that can't be used on Nodelists.
 
 5. What is a component?
+    - They are reusable pieces of code.
 
 ### Git Set up
 
